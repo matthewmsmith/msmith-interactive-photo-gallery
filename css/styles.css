@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.images {
+   display: flex;
+   flex-wrap: row wrap;
+   justify-content: space-around;
+   
+   
+}
+.image {
+   flex-direction: column;
+   width: 200px;
+   height: 150px;
+   margin-top: 10px;
+  
+}
