@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+    <link href="js/lightbox/lightbox.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/styles.css">
     <title>Interactive Gallery</title>
 </head>
@@ -14,102 +18,108 @@
     <div class="search-wrapper">
         <input type="text" class="search" placeholder="Search">
     </div>
-    <section class="wrapper">
-       
-            <div class="image-wrapper">
-                <img src="images/01.jpg" alt="Hey Bales" class="image">
-            </div>
-            <h2>Hay Bales</h2>
-            <p>I love hay bales. Took this snap on a drive through the countryside past some straw fields.</p>
-     
+    <div class="wrapper" id="aniimated-thumbnials">
 
-            <div class="image-wrapper">
-                <img src="images/02.jpg" alt="Lake" class="image">
-            </div>
-            <h2>Lake</h2>
-            <p>The lake was so calm today. We had a great view of the snow on the mountains from here.</p>
-        
-
-   
-            <div class="image-wrapper">
-                <img src="images/03.jpg" alt="Canyon" class="image">
-            </div>
-            <h2>Canyon</h2>
-            <p>I hiked to the top of the mountain and got this picture of the canyon and trees below.</p>
-        
+        <a href='images/01.jpg' data-lightbox='image' class='image-wrapper'>
+            <img src='images/thumbnails/01.jpg' alt='Hey Bales' class='image'>
+        </a>
+        <h2>Hay Bales</h2>
+        <p>I love hay bales. Took this snap on a drive through the countryside past some straw fields.</p>
 
 
-            <div class="image-wrapper">
-                <img src="images/04.jpg" alt="Iceberg" class="image">
-            </div>
-            <h2>Iceberg</h2>
-            <p>It was amazing to see an iceberg up close, it was so cold but didn’t snow today.</p>
-        
+        <a href='images/02.jpg' data-lightbox='image' class='image-wrapper'>
+            <img src='images/thumbnails/02.jpg' alt='Lake' class='image'>
+        </a>
+        <h2>Lake</h2>
+        <p>The lake was so calm today. We had a great view of the snow on the mountains from here.</p>
 
-            <div class="image-wrapper">
-                <img src="images/05.jpg" alt="Desert" class="image">
-            </div>
-            <h2>Desert</h2>
-            <p>The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through
-                the
-                canyons.</p>
+
+
+        <a href='images/03.jpg' data-lightbox='image' class='image-wrapper'>
+            <img src='images/thumbnails/03.jpg' alt='Canyon' class='image'>
+        </a>
+        <h2>Canyon</h2>
+        <p>I hiked to the top of the mountain and got this picture of the canyon and trees below.</p>
+
+
+        <a href='images/04.jpg' data-lightbox='image' class='image-wrapper'>
+            <img src='images/thumbnails/04.jpg' alt='Iceberg' class='image'>
+        </a>
+        <h2>Iceberg</h2>
+        <p>It was amazing to see an iceberg up close, it was so cold but didn’t snow today.</p>
+
+
+        <a href='images/05.jpg' data-lightbox='image' class='image-wrapper'>
+            <img src='images/thumbnails/05.jpg' alt='Desert' class='image'>
+        </a>
+        <h2>Desert</h2>
+        <p>The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through
+            the
+            canyons.</p>
+
+
+
+        <a href='images/06.jpg' data-lightbox='image' class='image-wrapper'>
+            <img src='images/thumbnails/06.jpg' alt='Fall' class='image'>
+        </a>
+        <h2>Fall</h2>
+        <p>Fall is coming, I love when the leaves on the trees start to change color.</p>
+
+
+
+        <a href='images/07.jpg' data-lightbox='image' class='image-wrapper'>
+            <img src='images/thumbnails/07.jpg' alt='Plantation' class='image'>
+        </a>
+        <h2>Plantation</h2>
+        <p>I drove past this plantation yesterday, everything is so green!</p>
+
+
+
+        <a href='images/08.jpg' data-lightbox='image' class='image-wrapper'>
+            <img src='images/thumbnails/08.jpg' alt='Dunes' class='image'>
+        </a>
+        <h2>Dunes</h2>
+        <p>My summer vacation to the Oregon Coast. I love the sandy dunes!</p>
+
+
+        <a href='images/09.jpg' data-lightbox='image' class='image-wrapper'>
+            <img src='images/thumbnails/09.jpg' alt='Countryside' class='image'>
+        </a>
+        <h2>Countryside Lane</h2>
+        <p>We enjoyed a quiet stroll down this countryside lane.</p>
+
+        <a href='images/10.jpg' data-lightbox='image' class='image-wrapper'>
+            <img src='images/thumbnails/10.jpg' alt='Sunset' class='image'>
+        </a>
+        <h2>Sunset</h2>
+        <p> Sunset at the coast! The sky turned a lovely shade of orange.</p>
+
+
+        <a href='images/11.jpg' data-lightbox='image' class='image-wrapper'>
+            <img src='images/thumbnails/11.jpg' alt='Cave' class='image'>
+        </a>
+        <h2>Cave</h2>
+        <p>I did a tour of a cave today and the view of the landscape below was breathtaking.</p>
+
+        <a href='images/12.jpg' data-lightbox='image' class='image-wrapper'>
+            <img src='images/thumbnails/02.jpg' alt='Bluebells' class='image'>
+        </a>
+        <h2>Bluebells</h2>
+        <p> I walked through this meadow of bluebells and got a good view of the snow on the mountain before the
+            fog came in.</p>
+
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"
+        integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <script src="js/lightbox/lightbox.js"></script>
+
     
+    <script src="js/main.js"></script>
 
-        
-            <div class="image-wrapper">
-                <img src="images/06.jpg" alt="Fall" class="image">
-            </div>
-            <h2>Fall</h2>
-            <p>Fall is coming, I love when the leaves on the trees start to change color.</p>
 
-     
-
-       
-            <div class="image-wrapper">
-                <img src="images/07.jpg" alt="Plantation" class="image">
-            </div>
-            <h2>Plantation</h2>
-            <p>I drove past this plantation yesterday, everything is so green!</p>
-
-       
-     
-            <div class="image-wrapper">
-                <img src="images/08.jpg" alt="Dunes" class="image">
-            </div>
-            <h2>Dunes</h2>
-            <p>My summer vacation to the Oregon Coast. I love the sandy dunes!</p>
-  
-
-        
-            <div class="image-wrapper">
-                <img src="images/09.jpg" alt="Country" class="image">
-            </div>
-            <h2>Countryside Lane</h2>
-            <p>We enjoyed a quiet stroll down this countryside lane.</p>
-  
-
-            <div class="image-wrapper">
-                <img src="images/10.jpg" alt="Sunset" class="image">
-            </div>
-            <h2>Sunset</h2>
-            <p> Sunset at the coast! The sky turned a lovely shade of orange.</p>
-  
-
-      
-            <div class="image-wrapper">
-                <img src="images/11.jpg" alt="Crave" class="image">
-            </div>
-            <h2>Cave</h2>
-            <p>I did a tour of a cave today and the view of the landscape below was breathtaking.</p>
-  
-            <div class="image-wrapper">
-                <img src="images/12.jpg" alt="Bluebells" class="image">
-            </div>
-            <h2>Bluebells</h2>
-            <p> I walked through this meadow of bluebells and got a good view of the snow on the mountain before the
-                fog came in.</p>
-      
-    </section>
 </body>
 
 </html>

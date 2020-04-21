@@ -27,7 +27,6 @@ p {
     flex-wrap: wrap;
     margin: 0 auto;
     
-
 }
 .image-wrapper {
     margin: 1em;  
@@ -41,17 +40,27 @@ p {
 @media(min-width: 762px) {
     .wrapper {
       max-width: 100%;
-      
-        
-      
+    
     }
     .image-wrapper {
         flex: 30%;
     }
     .image {    
       width: 100%;
- 
 
-     
     }
+}
+@media(min-width: 1028px) {
+ .wrapper {
+     max-width: 100%;
+
+ }
+ .image-wrapper{
+     flex: 20%;
+ }
+ .image{
+     width: 100%;
+ }
+
+
 }
