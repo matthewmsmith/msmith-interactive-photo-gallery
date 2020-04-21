@@ -14,7 +14,7 @@ p {
 
 }
 
-.search{
+.search1{
     border-radius: 5px;
     padding:1em 2em;
     width: 90%; 
@@ -26,6 +26,7 @@ p {
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
+    max-width: 90%;
     
 }
 .image-wrapper {
@@ -39,11 +40,11 @@ p {
 
 @media(min-width: 762px) {
     .wrapper {
-      max-width: 100%;
+      max-width: 90%;
     
     }
     .image-wrapper {
-        flex: 30%;
+        flex: 25%;
     }
     .image {    
       width: 100%;
@@ -52,7 +53,7 @@ p {
 }
 @media(min-width: 1028px) {
  .wrapper {
-     max-width: 100%;
+     max-width: 80%;
 
  }
  .image-wrapper{
