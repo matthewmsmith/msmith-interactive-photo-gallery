@@ -1,17 +1,26 @@
 
-
-
-
-
  let $search = $('#search');
- let $img = $('img');
+ let photoCaption = [];
+ let $a = $('a');
 
 
- $search.keyup(function (e) {
- const entered = $search.val().toLowerCase();
-  if (entered === `$[data-title]`) {
-    $img.show();
-  } else if ( value !== '') {
-    $img.hide();
-  }
-});
+ // caption appended to photoCaption array
+ $a.each(function () {
+   let caption = $(this).attr('data-title').toLowerCase();
+   photoCaption.push(caption);
+ 
+ })
+
+
+ $search.keyup(function () {
+     let entered = $(this).val().toLowerCase();
+     for(let i = 0; i< photoCaption.length; i ++) {
+
+         if(photoCaption[i].indexOf(entered) < 0) {
+            $a.eq(i).show();
+         } else {
+           $a.eq(i).hide();
+         }
+        
+     }
+ })
