@@ -22,6 +22,7 @@ p {
 }
 
 
+
 .wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -35,32 +36,35 @@ p {
 .image {
     width: 100%;
     box-shadow: 1px 2px 15px black;
-
+ 
 }
 
 @media(min-width: 762px) {
     .wrapper {
-      max-width: 90%;
+      max-width: 70%;
     
     }
     .image-wrapper {
         flex: 25%;
     }
     .image {    
-      width: 100%;
+      width: 80%;
 
+    }
+    .search1 {
+          width: 50%;
     }
 }
 @media(min-width: 1028px) {
  .wrapper {
-     max-width: 80%;
+     max-width: 90%;
 
  }
  .image-wrapper{
-     flex: 20%;
+     flex: 22%;
  }
  .image{
-     width: 100%;
+     width: 60%;
  }
 
 
