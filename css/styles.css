@@ -28,6 +28,7 @@ p {
     flex-wrap: wrap;
     margin: 0 auto;
     max-width: 90%;
+    justify-content: center;
     
 }
 .image-wrapper {
