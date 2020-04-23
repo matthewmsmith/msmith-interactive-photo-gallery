@@ -17,9 +17,9 @@
      for(let i = 0; i< photoCaption.length; i ++) {
 
          if(photoCaption[i].indexOf(entered) < 0) {
-            $a.eq(i).show();
+            $a.eq(i).hide();
          } else {
-           $a.eq(i).hide();
+           $a.eq(i).show();
          }
         
      }
